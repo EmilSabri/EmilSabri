@@ -1,2 +1,7 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<section>
+    <h1>Welcome to my domain - EmilSabri.com</h1>
+    <!-- Todo - Add picture of me :) -->
+    <!-- Todo - Socials (Twitter, LinkedIn, Tiktok, Youtube, Instagram) -->
+    <!-- Todo - Email Newsletter capture -->
+    <!-- Todo - Roadmap: socials, youtube channel, projects, goals-->
+</section>
