@@ -23,4 +23,4 @@
         <input bind:value="{email}" name="email" type="email" placeholder="you@gmail.com">
         <button>Subscribe</button>
     </form>
-<p>Newsletter - Get status updates on the roadmap, blogs, and future projects</p>
+<p>Newsletter - Get updates on the roadmap, blogs, and future projects</p>
