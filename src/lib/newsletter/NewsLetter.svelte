@@ -1,6 +1,6 @@
 
 <script>
-    const API_KEY = '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'
+    const API_KEY = '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'
     let email = ''
 
     async function addToMailChimp() {
