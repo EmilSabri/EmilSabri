@@ -11,7 +11,7 @@
 
 <div class="flex flex-col items-center bg-stone-800 text-white">
     <div class="flex">
-        <p class="my-3 p-1">Time Travel:</p>
+        <!-- <p class="my-3 p-1">Time Travel:</p> -->
         {#each years as year, i}
             <button id="{years[i]}-block" on:click={() => handleClick(i)}
             class="{year === years[activeYearIndex] ? "bg-yellow-500" : "bg-gray-500"} m-3 p-1 rounded-md ease-in duration-200">

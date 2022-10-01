@@ -1,7 +1,7 @@
 <script>
     import "../app.css"
-    import GoogleTag from "$lib/meta/GoogleTag.svelte"
-    import Socials from "$lib/socials/Socials.svelte"
+    import GoogleTag from "../lib/meta/GoogleTag.svelte"
+    import Socials from "../lib/socials/Socials.svelte"
     import TimeTravel from "../lib/timetravel/TimeTravel.svelte";
 </script>
 
@@ -12,6 +12,7 @@
     <a href="/">Home</a>
     <a href="/about">About</a>
     <a href="/projects">Projects</a>
+    <a href="/blog">Blog</a>
     <!-- <a href="/roadmap">Roadmap</a> -->
     <Socials />
 </nav>

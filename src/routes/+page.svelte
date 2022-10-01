@@ -10,7 +10,10 @@
             <h1>Welcome to my domain - EmilSabri.com</h1>
             <h2>I've been expecting you...</h2>
             <img src="/images/boss.png" alt="Emil the Boss" />
+
+            <p>Sign up to enjoy a live case study of success</p>
             <NewsLetter />
+            <p>Newsletter - Get updates on the roadmap, blogs, and future projects</p>
         </div>
     </section>
 
@@ -28,7 +31,7 @@
             social platform’s business APIs.
         </p>
         <p>
-            Look around and you’ll find you'll blog posts, status updates, and projects that I’m currently 
+            Look around and you’ll find blog posts, status updates, and projects that I’m currently 
             working on to further progress my goal.
         </p>
     </section>
