@@ -1,4 +1,5 @@
-import { SENDINBLUE_API_KEY } from '$env/static/private';
+// import { SENDINBLUE_API_KEY } from '$env/static/private';
+const SENDINBLUE_API_KEY = process.env.SENDINBLUE_API_KEY
 
 export async function POST ({request}) {
     const {email} = await request.json()
