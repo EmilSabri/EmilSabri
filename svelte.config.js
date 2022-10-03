@@ -10,7 +10,11 @@ const config = {
 		preprocess({
 			postcss: true,
 		})
-	]
+	],
+	env: {
+		dir: process.cwd(),
+		publicPrefix: 'PUBLIC_'
+	}
 };
 
 export default config;
