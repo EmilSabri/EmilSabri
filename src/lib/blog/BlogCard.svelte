@@ -1,7 +1,6 @@
 <script>
     export let blog
     export let is2ndColumn
-    console.log(blog)
 
     const cardStyle = "bg-stone-200 border-stone-700 border-2 rounded-md" 
 </script>
