@@ -19,7 +19,7 @@
                 <div class="card-content flex flex-col text-left p-3">
                     <div class="flex justify-between text-white mb-2">
                         <h2 class="mr-2">Referral Tree</h2>
-                        <h2 class="text-sm">Oct 25, 2022</h2>
+                        <h2 class="text-sm">Oct 18, 2022</h2>
                     </div>
 
                     <h3 class="text-yellow-500">Revenue: $0</h3>
@@ -50,20 +50,6 @@
             <h3>100 views | 3 mins avg</h3>
         </div>
 
-        <!-- <div class="posts">
-            <h2>PDF Bookmarker has Launched!! 🚀🚀🚀</h2>
-            <h3>100 views | 3 mins avg</h3>
-        </div>
-
-        <div class="posts">
-            <h2>PDF Bookmarker has Launched!! 🚀🚀🚀</h2>
-            <h3>100 views | 3 mins avg</h3>
-        </div>
-
-        <div class="posts">
-            <h2>PDF Bookmarker has Launched!! 🚀🚀🚀</h2>
-            <h3>100 views | 3 mins avg</h3>
-        </div> -->
     </section>
 </div>
 
@@ -71,7 +57,7 @@
 
 <style>
     .wrapper {
-        font-size: clamp(0.5rem, 0.75vw, 1.5rem);
+        font-size: clamp(0.5rem, 0.75vw, .75rem);
         @apply flex flex-col items-center
     }
     .welcome {
