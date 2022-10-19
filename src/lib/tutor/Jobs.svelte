@@ -3,7 +3,7 @@
     Description - Lists and allows selections for all the tutoring help I provide
  -->
 <script>
-    import { Accordion as A, Button } from 'stwui';
+    // import { Accordion as A, Button } from 'stwui';
     let open = '';
 
     const handleClick = (item) => {
