@@ -1,12 +1,12 @@
 <script>
-    import Jobs from "$lib/tutor/Jobs.svelte"
+    // import Jobs from "$lib/tutor/Jobs.svelte"
 </script>
 
 
 <div class="wrapper-div">
     <img src="icons/TutorHero_half.png" alt="tutor hero" class="tutor-hero" />
     <div class="study">
-        <Jobs />
+        <!-- <Jobs /> -->
     </div>
     <div class="scheduler bg-blue-500">
         <p>Scheduler View</p>

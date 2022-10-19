@@ -14,7 +14,7 @@
         <!-- List of project cards -->
         <div class="flex gap-4">
             <div class="card">
-                <img src="/images/pdfbookmarker_thumbnail.png" alt="PDF Bookmarker Thumbnail" class="h-[33vh]" />
+                <img src="/images/pdfbookmarker_thumbnail.png" alt="PDF Bookmarker Thumbnail" class="card-img" />
 
                 <div class="card-content flex flex-col text-left p-3">
                     <div class="flex justify-between text-white mb-2">
@@ -27,7 +27,7 @@
             </div>
 
             <div class="card">
-                <img src="/images/RAF_meme.jpeg" alt="PDF Bookmarker Thumbnail" class="h-[33vh]" />
+                <img src="/images/RAF_meme.jpeg" alt="PDF Bookmarker Thumbnail" class="card-img" />
 
                 <div class="card-content flex flex-col text-left p-3">
                     <div class="flex justify-between text-white mb-2">
@@ -70,7 +70,14 @@
     }
 
     .card {
-        @apply w-[300px] bg-stone-800 border-8 border-stone-800 rounded-lg shadow-lg;
+        min-width: 300px;
+        max-width: 300px;
+        @apply  bg-stone-800 border-8 border-stone-800 rounded-lg shadow-lg;
+    }
+
+    .card-img {
+        min-height: 250px;
+        max-height: 250px;
     }
 
     .blog-posts {
