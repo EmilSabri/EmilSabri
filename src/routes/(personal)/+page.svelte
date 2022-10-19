@@ -9,7 +9,7 @@
             <img src="/images/boss.png" alt="Emil the Boss" class="" />
     </section>
 
-    <section class="projects text-center">
+    <section class="projects text-center mb-10">
         <h1 class="mb-3">Projects</h1>
         <!-- List of project cards -->
         <div class="flex gap-4">
@@ -42,8 +42,28 @@
         
     </section>
 
-    <section class="mt-10">
-        extra
+    <section class="blog-posts">
+        <h1 class="mb-3">Blog Posts</h1>
+
+        <div class="posts">
+            <h2>PDF Bookmarker has Launched!! 🚀🚀🚀</h2>
+            <h3>100 views | 3 mins avg</h3>
+        </div>
+
+        <!-- <div class="posts">
+            <h2>PDF Bookmarker has Launched!! 🚀🚀🚀</h2>
+            <h3>100 views | 3 mins avg</h3>
+        </div>
+
+        <div class="posts">
+            <h2>PDF Bookmarker has Launched!! 🚀🚀🚀</h2>
+            <h3>100 views | 3 mins avg</h3>
+        </div>
+
+        <div class="posts">
+            <h2>PDF Bookmarker has Launched!! 🚀🚀🚀</h2>
+            <h3>100 views | 3 mins avg</h3>
+        </div> -->
     </section>
 </div>
 
@@ -58,13 +78,23 @@
         @apply flex flex-col text-center;
     }
 
+    /*  Todo - add some media query styling to fix the view at certain breakpoints */
     .projects {
         /* @apply flex; */
     }
 
     .card {
-        @apply w-[300px] bg-stone-800 border-4 border-stone-800;
+        @apply w-[300px] bg-stone-800 border-8 border-stone-800 rounded-lg shadow-lg;
     }
+
+    .blog-posts {
+        @apply w-3/4 text-center pb-10 flex flex-col gap-5;
+    }
+
+    .posts {
+        @apply flex justify-center gap-x-56 bg-stone-700 border-2 text-white shadow-md p-2 rounded-md;
+    }
+
 
     .section-style {
         @apply border-4 border-blue-300;
