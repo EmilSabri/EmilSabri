@@ -6,6 +6,5 @@ node_modules
 .env
 .env.*
 !.env.example
-package-lock.json
-*/GoogleTag.svelte
-src/lib/meta/GoogleTag.svelte
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
