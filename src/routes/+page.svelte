@@ -1,11 +1,15 @@
 <script>
 	import { LinkedInSvg, GithubSvg, EmailSvg } from '$lib/svgs';
+	import ProfileImg from '/static/imgs/YellowStone_TreeSwang.png?&w=500&webp&meta&srcset';
+	import PJScreenshot from '/static/imgs/pj-screenshot.png?h=1200&webp&meta&srcset';
+	import BrianFogScreenshot from '/static/imgs/brianfog-screenshot.png?h=1200&webp&meta&srcset';
 </script>
 
 <div class="container h-full mx-auto grid md:grid-cols-[auto_1fr] items-center py-8 px-4 gap-8">
 	<div class="h-full w-72 mx-auto">
 		<img
-			src="/imgs/YellowStone_TreeSwang.png"
+			srcset={ProfileImg}
+			type="image/webp"
 			alt="YellowStone Tree Swang"
 			class=" mb-4 aspect-square object-cover rounded-lg"
 		/>
@@ -110,7 +114,8 @@
 
 			<img
 				class="order-1 xl:order-2 aspect-video object-cover rounded-lg w-full xl:h-72 mx-auto"
-				src="/imgs/pj-screenshot.png"
+				srcset={PJScreenshot}
+				type="image/webp"
 				alt=""
 			/>
 		</div>
@@ -162,7 +167,8 @@
 
 			<img
 				class="order-1 xl:order-2 aspect-video object-cover rounded-lg w-full xl:h-72 mx-auto"
-				src="/imgs/brianfog-screenshot.png"
+				srcset={BrianFogScreenshot}
+				type="image/webp"
 				alt=""
 			/>
 		</div>
