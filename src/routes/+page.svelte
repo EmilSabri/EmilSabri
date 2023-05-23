@@ -55,15 +55,17 @@
 
 	<div class=" w-full h-full">
 		<!-- PJ project -->
-		<div class=" w-full grid grid-cols-[1fr_auto] mb-8">
-			<div class="border-l-2 border-gray-400 pl-2 mr-2">
-				<!-- <div class="flex"> -->
-				<h2 class="!text-3xl !font-medium">
-					PreJourney <span class="!text-base !font-light ml-4">May 1, 2023</span>
-				</h2>
+		<div
+			class=" w-full grid xl:grid-cols-[1fr_auto] xl:items-center mb-8 md:pl-2 xl:border-none xl:pl-0"
+		>
+			<div class="order-2 xl:order-1 pt-2 border-gray-400 pb-8 pl-2 mr-2">
+				<div class="">
+					<h2 class="!text-3xl !font-medium text-left">
+						PreJourney <span class="!text-base !font-light ml-4">May 1, 2023</span>
+					</h2>
 
-				<!-- </div> -->
-				<h3 class="!font-normal mb-4">SaaS offering Midjourney through an API</h3>
+					<h3 class="!font-normal mb-4">SaaS offering Midjourney through an API</h3>
+				</div>
 				<div class="!font-light text-gray-200">
 					<p>
 						Built this for my AI lootbox merch store -
@@ -87,28 +89,37 @@
 						request.
 					</p> -->
 
-					<p>
+					<p class="">
 						The website portion is built using SvelteKit using TailwindCSS hosted on Vercel. The
 						meat of the project is the API that our customers can use. I used AWS API Gateway
 						because it can programatically create API keys which includes throttling and usage
 						limits right out the gate.
 					</p>
 
-					<!-- <p>
-						Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah
-						blah Bla.
-					</p> -->
+					<p>
+						Check it out <a
+							href="https://mushroom-mafia-app.vercel.app/"
+							target="_blank"
+							class="underline text-primary-500">here</a
+						>
+					</p>
 				</div>
 				<!-- /projects/prejourney -->
-				<a href="" class="font-bold text-primary-600">Read more -></a>
+				<!-- <a href="" class="font-bold text-primary-600">Read more -></a> -->
 			</div>
 
-			<img class="aspect-video object-cover rounded-lg h-72" src="/imgs/pj-screenshot.png" alt="" />
+			<img
+				class="order-1 xl:order-2 aspect-video object-cover rounded-lg w-full xl:h-72 mx-auto"
+				src="/imgs/pj-screenshot.png"
+				alt=""
+			/>
 		</div>
 		<!-- Second project -->
 
-		<div class=" w-full grid grid-cols-[1fr_auto]">
-			<div class="border-l-2 border-gray-400 pl-2 mr-2 flex flex-col justify-center">
+		<div
+			class=" w-full grid xl:grid-cols-[1fr_auto] xl:items-center mb-8 md:pl-2 xl:border-none xl:pl-0"
+		>
+			<div class="order-2 xl:order-1 pt-2 border-gray-400 pb-8 pl-2 mr-2">
 				<div>
 					<h2 class="!text-3xl !font-medium">
 						AI Blogs <span class="!text-base !font-light ml-4">Jan 1, 2023</span>
@@ -146,11 +157,11 @@
 					</p> -->
 				</div>
 				<!-- /projects/ai-blogs -->
-				<a href="" class="font-bold text-primary-600">Read more -></a>
+				<!-- <a href="" class="font-bold text-primary-600">Read more -></a> -->
 			</div>
 
 			<img
-				class="aspect-video object-cover rounded-lg h-72"
+				class="order-1 xl:order-2 aspect-video object-cover rounded-lg w-full xl:h-72 mx-auto"
 				src="/imgs/brianfog-screenshot.png"
 				alt=""
 			/>
