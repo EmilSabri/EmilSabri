@@ -9,7 +9,7 @@
 			<div>i lift therefore i am</div>
 		</div>
 		<div class="flex">
-			<div class="flex flex-col pr-[2px] gap-4">
+			<div class="flex flex-col pr-[2px] gap-4 pt-1">
 				<a href="https://github.com/EmilSabri" target="_blank"><GithubSvg props={{ width: '24px', height: '24px' }} /></a>
 				<a href="https://www.linkedin.com/in/esabri/" target="_blank">
 					<LinkedInSvg props={{ width: '24px', height: '24px' }} />
@@ -27,7 +27,7 @@
 					class="order-1 xl:order-2 aspect-video object-cover w-full xl:h-72 mx-aut"
 				/>
 			</div>
-			<div class="pl-[2px]">
+			<div class="pl-[2px] -mt-[8px]">
 				<div>yes</div>
 				<div>im</div>
 				<div>jacked</div>
