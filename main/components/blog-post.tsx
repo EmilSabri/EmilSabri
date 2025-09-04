@@ -10,6 +10,7 @@ interface BlogPostProps {
   post: BlogPostType
 }
 
+
 export function BlogPost({ post }: BlogPostProps) {
   return (
     <div className="min-h-screen bg-background">
