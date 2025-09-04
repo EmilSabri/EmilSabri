@@ -90,20 +90,15 @@ export default function Portfolio() {
                     GitHub
                   </Link>
                 </Button>
-                <Button
-                  variant="outline"
-                  asChild
-                  className="glitch-hover bg-transparent"
-                >
-                  <Link href="mailto:emil@example.com">
-                    <Mail className="w-4 h-4 mr-2" />
-                    Email
-                  </Link>
-                </Button>
               </div>
-              <div className="flex items-center text-muted-foreground">
-                <MapPin className="w-4 h-4 mr-2" />
-                Las Vegas, NV
+              <div className="space-y-2">
+                <div className="text-muted-foreground">
+                  emil.sabri@gmail.com
+                </div>
+                <div className="flex items-center text-muted-foreground">
+                  <MapPin className="w-4 h-4 mr-2" />
+                  Las Vegas, NV
+                </div>
               </div>
             </div>
             <div className="relative">
@@ -298,12 +293,6 @@ export default function Portfolio() {
               className="text-muted-foreground hover:text-primary transition-colors glitch-hover"
             >
               <Github className="w-6 h-6" />
-            </Link>
-            <Link
-              href="mailto:emil@example.com"
-              className="text-muted-foreground hover:text-primary transition-colors glitch-hover"
-            >
-              <Mail className="w-6 h-6" />
             </Link>
           </div>
 
