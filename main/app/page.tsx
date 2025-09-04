@@ -20,16 +20,28 @@ export default function Portfolio() {
               <GlitchText text="<ES />" />
             </div>
             <div className="hidden md:flex space-x-8">
-              <a href="#about" className="text-foreground hover:text-primary transition-colors glitch-hover">
+              <a
+                href="#about"
+                className="text-foreground hover:text-primary transition-colors glitch-hover"
+              >
                 About
               </a>
-              <a href="#experience" className="text-foreground hover:text-primary transition-colors glitch-hover">
+              <a
+                href="#experience"
+                className="text-foreground hover:text-primary transition-colors glitch-hover"
+              >
                 Experience
               </a>
-              <a href="#projects" className="text-foreground hover:text-primary transition-colors glitch-hover">
+              <a
+                href="#projects"
+                className="text-foreground hover:text-primary transition-colors glitch-hover"
+              >
                 Projects
               </a>
-              <a href="#blog" className="text-foreground hover:text-primary transition-colors glitch-hover">
+              <a
+                href="#blog"
+                className="text-foreground hover:text-primary transition-colors glitch-hover"
+              >
                 Blog
               </a>
             </div>
@@ -42,27 +54,44 @@ export default function Portfolio() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="font-mono text-primary mb-4 terminal-cursor">Hello, I'm</div>
+              <div className="font-mono text-primary mb-4 terminal-cursor">
+                Hello, I'm
+              </div>
               <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
                 <GlitchText text="Emil Sabri" className="glitch-text" />
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Software Engineer crafting digital experiences with code, creativity, and a touch of glitch aesthetic.
+                Software Engineer crafting digital experiences with code,
+                creativity, and a touch of glitch aesthetic.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
-                <Button asChild className="glitch-effect hover:animate-pulse neon-glow">
-                  <Link href="https://linkedin.com/in/emilsabri" target="_blank">
+                <Button
+                  asChild
+                  className="glitch-effect hover:animate-pulse neon-glow"
+                >
+                  <Link
+                    href="https://linkedin.com/in/emilsabri"
+                    target="_blank"
+                  >
                     <Linkedin className="w-4 h-4 mr-2" />
                     LinkedIn
                   </Link>
                 </Button>
-                <Button variant="outline" asChild className="glitch-hover bg-transparent">
+                <Button
+                  variant="outline"
+                  asChild
+                  className="glitch-hover bg-transparent"
+                >
                   <Link href="https://github.com/emilsabri" target="_blank">
                     <Github className="w-4 h-4 mr-2" />
                     GitHub
                   </Link>
                 </Button>
-                <Button variant="outline" asChild className="glitch-hover bg-transparent">
+                <Button
+                  variant="outline"
+                  asChild
+                  className="glitch-hover bg-transparent"
+                >
                   <Link href="mailto:emil@example.com">
                     <Mail className="w-4 h-4 mr-2" />
                     Email
@@ -71,7 +100,7 @@ export default function Portfolio() {
               </div>
               <div className="flex items-center text-muted-foreground">
                 <MapPin className="w-4 h-4 mr-2" />
-                San Diego, CA
+                Las Vegas, NV
               </div>
             </div>
             <div className="relative">
@@ -97,13 +126,16 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
               <p className="mb-6">
-                Professional experience is wide and varied. I have worked on projects in computer vision, full stack,
-                and dev ops. My passion lies in creating innovative solutions that bridge the gap between complex
-                technical challenges and user-friendly experiences.
+                Professional experience is wide and varied. I have worked on
+                projects in computer vision, full stack, and dev ops. My passion
+                lies in creating innovative solutions that bridge the gap
+                between complex technical challenges and user-friendly
+                experiences.
               </p>
               <p className="mb-6">
-                Working on a SaaS to bring an API to Midjourney. Currently looking for a full time role that will prove
-                to be a great workspace for new learnings and challenges.
+                Working on a SaaS to bring an API to Midjourney. Currently
+                looking for a full time role that will prove to be a great
+                workspace for new learnings and challenges.
               </p>
               <p>And to not go broke lol</p>
             </div>
@@ -125,8 +157,12 @@ export default function Portfolio() {
               <CardHeader>
                 <div className="flex justify-between items-start">
                   <div>
-                    <CardTitle className="text-xl">Senior Software Engineer</CardTitle>
-                    <CardDescription className="text-lg">Tech Company • 2022 - Present</CardDescription>
+                    <CardTitle className="text-xl">
+                      Senior Software Engineer
+                    </CardTitle>
+                    <CardDescription className="text-lg">
+                      Tech Company • 2022 - Present
+                    </CardDescription>
                   </div>
                   <Badge variant="secondary" className="neon-glow">
                     Current
@@ -135,10 +171,21 @@ export default function Portfolio() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• Led development of computer vision applications using Python and OpenCV</li>
-                  <li>• Built full-stack web applications with React, Node.js, and PostgreSQL</li>
-                  <li>• Implemented DevOps practices including CI/CD pipelines and containerization</li>
-                  <li>• Mentored junior developers and conducted code reviews</li>
+                  <li>
+                    • Led development of computer vision applications using
+                    Python and OpenCV
+                  </li>
+                  <li>
+                    • Built full-stack web applications with React, Node.js, and
+                    PostgreSQL
+                  </li>
+                  <li>
+                    • Implemented DevOps practices including CI/CD pipelines and
+                    containerization
+                  </li>
+                  <li>
+                    • Mentored junior developers and conducted code reviews
+                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -147,18 +194,33 @@ export default function Portfolio() {
               <CardHeader>
                 <div className="flex justify-between items-start">
                   <div>
-                    <CardTitle className="text-xl">Full Stack Developer</CardTitle>
-                    <CardDescription className="text-lg">Startup Inc • 2020 - 2022</CardDescription>
+                    <CardTitle className="text-xl">
+                      Full Stack Developer
+                    </CardTitle>
+                    <CardDescription className="text-lg">
+                      Startup Inc • 2020 - 2022
+                    </CardDescription>
                   </div>
                   <Badge variant="outline">2 years</Badge>
                 </div>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• Developed responsive web applications using React and TypeScript</li>
-                  <li>• Designed and implemented RESTful APIs with Express.js</li>
-                  <li>• Collaborated with design team to create pixel-perfect user interfaces</li>
-                  <li>• Optimized application performance and implemented testing strategies</li>
+                  <li>
+                    • Developed responsive web applications using React and
+                    TypeScript
+                  </li>
+                  <li>
+                    • Designed and implemented RESTful APIs with Express.js
+                  </li>
+                  <li>
+                    • Collaborated with design team to create pixel-perfect user
+                    interfaces
+                  </li>
+                  <li>
+                    • Optimized application performance and implemented testing
+                    strategies
+                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -181,7 +243,9 @@ export default function Portfolio() {
                   </CardTitle>
                   <Badge className="neon-glow">SaaS</Badge>
                 </div>
-                <CardDescription>SaaS offering Midjourney through an API</CardDescription>
+                <CardDescription>
+                  SaaS offering Midjourney through an API
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <img
@@ -190,8 +254,9 @@ export default function Portfolio() {
                   className="w-full h-48 object-cover rounded-lg mb-4 ascii-border"
                 />
                 <p className="text-muted-foreground mb-4">
-                  Built this for my AI lootbox merch store. Needed a way to programmatically create images for the
-                  lootboxes and as of now Midjourney currently has the best generative art.
+                  Built this for my AI lootbox merch store. Needed a way to
+                  programmatically create images for the lootboxes and as of now
+                  Midjourney currently has the best generative art.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <Badge variant="outline">SvelteKit</Badge>
@@ -215,7 +280,9 @@ export default function Portfolio() {
                   </CardTitle>
                   <Badge className="neon-glow">AI Tool</Badge>
                 </div>
-                <CardDescription>ChatGPT 3.5 blogs created through keywords</CardDescription>
+                <CardDescription>
+                  ChatGPT 3.5 blogs created through keywords
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <img
@@ -224,8 +291,10 @@ export default function Portfolio() {
                   className="w-full h-48 object-cover rounded-lg mb-4 ascii-border"
                 />
                 <p className="text-muted-foreground mb-4">
-                  Using OpenAI's GPT 3.5 API, I created a system that given a keyword it will grab all the related
-                  keyword ideas from Google Keyword Planner and then use those keywords to create blog posts.
+                  Using OpenAI's GPT 3.5 API, I created a system that given a
+                  keyword it will grab all the related keyword ideas from Google
+                  Keyword Planner and then use those keywords to create blog
+                  posts.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <Badge variant="outline">OpenAI API</Badge>
@@ -259,7 +328,10 @@ export default function Portfolio() {
             <Card className="hover:shadow-lg transition-all glitch-hover scan-lines">
               <CardHeader>
                 <CardTitle className="text-lg">
-                  <Link href="/blog/getting-started-with-ai" className="hover:text-primary transition-colors">
+                  <Link
+                    href="/blog/getting-started-with-ai"
+                    className="hover:text-primary transition-colors"
+                  >
                     <GlitchText text="Getting Started with AI Development" />
                   </Link>
                 </CardTitle>
@@ -267,7 +339,8 @@ export default function Portfolio() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  A comprehensive guide to building your first AI application using modern tools and frameworks.
+                  A comprehensive guide to building your first AI application
+                  using modern tools and frameworks.
                 </p>
               </CardContent>
             </Card>
@@ -275,7 +348,10 @@ export default function Portfolio() {
             <Card className="hover:shadow-lg transition-all glitch-hover scan-lines">
               <CardHeader>
                 <CardTitle className="text-lg">
-                  <Link href="/blog/full-stack-best-practices" className="hover:text-primary transition-colors">
+                  <Link
+                    href="/blog/full-stack-best-practices"
+                    className="hover:text-primary transition-colors"
+                  >
                     <GlitchText text="Full Stack Development Best Practices" />
                   </Link>
                 </CardTitle>
@@ -283,7 +359,8 @@ export default function Portfolio() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Essential patterns and practices for building scalable full-stack applications in 2024.
+                  Essential patterns and practices for building scalable
+                  full-stack applications in 2024.
                 </p>
               </CardContent>
             </Card>
@@ -291,7 +368,10 @@ export default function Portfolio() {
             <Card className="hover:shadow-lg transition-all glitch-hover scan-lines">
               <CardHeader>
                 <CardTitle className="text-lg">
-                  <Link href="/blog/computer-vision-projects" className="hover:text-primary transition-colors">
+                  <Link
+                    href="/blog/computer-vision-projects"
+                    className="hover:text-primary transition-colors"
+                  >
                     <GlitchText text="Computer Vision Projects That Matter" />
                   </Link>
                 </CardTitle>
@@ -299,7 +379,8 @@ export default function Portfolio() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Exploring real-world applications of computer vision and how to get started with your own projects.
+                  Exploring real-world applications of computer vision and how
+                  to get started with your own projects.
                 </p>
               </CardContent>
             </Card>
@@ -313,7 +394,9 @@ export default function Portfolio() {
           <div className="font-mono text-2xl mb-4 text-primary terminal-cursor">
             <GlitchText text="</> Emil Sabri" />
           </div>
-          <p className="text-muted-foreground mb-6">Building the future, one line of code at a time.</p>
+          <p className="text-muted-foreground mb-6">
+            Building the future, one line of code at a time.
+          </p>
           <div className="flex justify-center space-x-6 mb-8">
             <Link
               href="https://linkedin.com/in/emilsabri"
@@ -347,5 +430,5 @@ export default function Portfolio() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
