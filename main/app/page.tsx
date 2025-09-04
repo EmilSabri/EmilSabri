@@ -73,7 +73,7 @@ export default function Portfolio() {
                   className="glitch-effect hover:animate-pulse neon-glow"
                 >
                   <Link
-                    href="https://linkedin.com/in/emilsabri"
+                    href="https://www.linkedin.com/in/esabri/"
                     target="_blank"
                   >
                     <Linkedin className="w-4 h-4 mr-2" />
@@ -286,7 +286,7 @@ export default function Portfolio() {
           </p>
           <div className="flex justify-center space-x-6 mb-8">
             <Link
-              href="https://linkedin.com/in/emilsabri"
+              href="https://www.linkedin.com/in/esabri/"
               target="_blank"
               className="text-muted-foreground hover:text-primary transition-colors glitch-hover"
             >
