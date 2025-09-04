@@ -5,7 +5,8 @@ import { Badge } from "@/components/ui/badge"
 import { GlitchText } from "@/components/glitch-text"
 import { MatrixBackground } from "@/components/matrix-background"
 import { AsciiArt, asciiArts } from "@/components/ascii-art"
-import Link from "next/link"
+import { ExperienceCard } from "@/components/experience-card";
+import Link from "next/link";
 
 export default function Portfolio() {
   return (
@@ -61,8 +62,8 @@ export default function Portfolio() {
                 <GlitchText text="Emil Sabri" className="glitch-text" />
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Software Engineer crafting digital experiences with code,
-                creativity, and a touch of glitch aesthetic.
+                Software Engineer designing, developing, building a better world
+                through code.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
                 <Button
@@ -127,10 +128,9 @@ export default function Portfolio() {
             <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
               <p className="mb-6">
                 Professional experience is wide and varied. I have worked on
-                projects in computer vision, full stack, and dev ops. My passion
-                lies in creating innovative solutions that bridge the gap
-                between complex technical challenges and user-friendly
-                experiences.
+                projects in computer vision, full stack, mobile apps, and dev
+                ops. My passion belongs to taming complicated novel technical
+                projects into a work of simplicity.
               </p>
               <p className="mb-6">
                 Working on Foodie Friend, a barcode scanning app that will
@@ -154,77 +154,43 @@ export default function Portfolio() {
             <GlitchText text="Professional Experience" />
           </h2>
           <div className="space-y-8">
-            <Card className="hover:shadow-lg transition-all glitch-hover scan-lines">
-              <CardHeader>
-                <div className="flex justify-between items-start">
-                  <div>
-                    <CardTitle className="text-xl">
-                      Senior Software Engineer
-                    </CardTitle>
-                    <CardDescription className="text-lg">
-                      Tech Company • 2022 - Present
-                    </CardDescription>
-                  </div>
-                  <Badge variant="secondary" className="neon-glow">
-                    Current
-                  </Badge>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>
-                    • Led development of computer vision applications using
-                    Python and OpenCV
-                  </li>
-                  <li>
-                    • Built full-stack web applications with React, Node.js, and
-                    PostgreSQL
-                  </li>
-                  <li>
-                    • Implemented DevOps practices including CI/CD pipelines and
-                    containerization
-                  </li>
-                  <li>
-                    • Mentored junior developers and conducted code reviews
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
+            <ExperienceCard
+              title="Senior Software Engineer"
+              company="Free Thinkers Consulting"
+              startYear={2023}
+              endYear="Present"
+              isCurrent={true}
+              experiences={[
+                "Built a custom quoting process within Salesforce replacing our client's current SaaS product that was orginally expesnsive and slow to use. Includes previews of what the quote page looks like, email sending, scheduled reminders, and a live history feature to allow the sales team to see where the user's at in the quote process",
+                "Developed an intelligent trip management tool utilzing drag and drop functionality to allow coaches to place athletes into their respective requested room sizes with an automatic CSV export feature that hotels require",
+                "Created a bespoke loan servicing application within the Salesforce platform for one of our clients to improve their loan processing system.",
+                "I tend to design, develop, write docs, and lead projects with the necessary requirements that stakeholders might not explciitly say but need for their business.",
+              ]}
+            />
 
-            <Card className="hover:shadow-lg transition-all glitch-hover scan-lines">
-              <CardHeader>
-                <div className="flex justify-between items-start">
-                  <div>
-                    <CardTitle className="text-xl">
-                      Full Stack Developer
-                    </CardTitle>
-                    <CardDescription className="text-lg">
-                      Startup Inc • 2020 - 2022
-                    </CardDescription>
-                  </div>
-                  <Badge variant="outline">2 years</Badge>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>
-                    • Developed responsive web applications using React and
-                    TypeScript
-                  </li>
-                  <li>
-                    • Designed and implemented RESTful APIs with Express.js
-                  </li>
-                  <li>
-                    • Collaborated with design team to create pixel-perfect user
-                    interfaces
-                  </li>
-                  <li>
-                    • Optimized application performance and implemented testing
-                    strategies
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
+            <ExperienceCard
+              title="Software Engineer - Contract"
+              company="Amazon"
+              startYear={2020}
+              endYear={2022}
+              experiences={[
+                "Resolved 100+ security vulnerabilities from team backlog, reducing security risk exposure and ensuring compliance requirements. Executed comprehensive remediation including dependency updates, IAM permission upgrades, and AWS architecture overhauls.",
+                "I took on the team’s DevOps responsibilities of developing and maintaining our CI/CD pipelines using AWS CDK (infrastructure as code tool) to reduce tribal knowledge.",
+              ]}
+            />
+
+            <ExperienceCard
+              title="Software Engineer"
+              company="Centauri"
+              startYear={2020}
+              endYear={2022}
+              isCurrent={true}
+              experiences={[
+                "Developed a full stack application in agile pair programming style for a project mission dashboard allowing officers and top secret cleared individuals to manage SpaceForce related missions such as satellite launches.",
+                "Led development of computer vision applications using Python and OpenCV",
+                "Refactored a computer vision project written from python over to C++ using intel's image processing libaries resulting in immense speed gains.",
+              ]}
+            />
           </div>
         </div>
       </section>
