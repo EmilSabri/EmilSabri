@@ -206,7 +206,7 @@ export default function Portfolio() {
               imageAlt="PreJourney Dashboard"
               content="Built this for my AI lootbox merch store. Needed a way to programmatically create images for the lootboxes and as of now Midjourney currently has the best generative art."
               technologies={["SvelteKit", "TailwindCSS", "AWS API Gateway"]}
-              projectUrl="https://prejourney.com"
+              // projectUrl="https://prejourney.com"
               badgeText="SaaS"
             />
 
@@ -217,7 +217,7 @@ export default function Portfolio() {
               imageAlt="AI Blogs Interface"
               content="Using OpenAI's GPT 3.5 API, I created a system that given a keyword it will grab all the related keyword ideas from Google Keyword Planner and then use those keywords to create blog posts."
               technologies={["OpenAI API", "Google Keyword Planner", "Python"]}
-              projectUrl="https://brionfog.com"
+              // projectUrl="https://brionfog.com"
               badgeText="AI Tool"
             />
           </div>

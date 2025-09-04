@@ -55,13 +55,15 @@ export function ProjectCard({
             </Badge>
           ))}
         </div>
-        <Button asChild className="w-full glitch-hover">
-          <Link href={projectUrl} target="_blank">
-            <ExternalLink className="w-4 h-4 mr-2" />
-            View Project
-          </Link>
-        </Button>
+        {projectUrl && (
+          <Button asChild className="w-full glitch-hover">
+            <Link href={projectUrl} target="_blank">
+              <ExternalLink className="w-4 h-4 mr-2" />
+              View Project
+            </Link>
+          </Button>
+        )}
       </CardContent>
     </Card>
-  )
+  );
 }
