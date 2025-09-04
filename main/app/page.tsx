@@ -6,6 +6,8 @@ import { GlitchText } from "@/components/glitch-text"
 import { MatrixBackground } from "@/components/matrix-background"
 import { AsciiArt, asciiArts } from "@/components/ascii-art"
 import { ExperienceCard } from "@/components/experience-card";
+import { ProjectCard } from "@/components/project-card";
+import { BlogCard } from "@/components/blog-card";
 import Link from "next/link";
 
 export default function Portfolio() {
@@ -202,80 +204,27 @@ export default function Portfolio() {
             <GlitchText text="Featured Projects" />
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="hover:shadow-lg transition-all hover:scale-105 glitch-hover scan-lines">
-              <CardHeader>
-                <div className="flex justify-between items-start">
-                  <CardTitle className="text-xl">
-                    <GlitchText text="PreJourney" />
-                  </CardTitle>
-                  <Badge className="neon-glow">SaaS</Badge>
-                </div>
-                <CardDescription>
-                  SaaS offering Midjourney through an API
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <img
-                  src="/midjourney-api-dashboard-interface.jpg"
-                  alt="PreJourney Dashboard"
-                  className="w-full h-48 object-cover rounded-lg mb-4 ascii-border"
-                />
-                <p className="text-muted-foreground mb-4">
-                  Built this for my AI lootbox merch store. Needed a way to
-                  programmatically create images for the lootboxes and as of now
-                  Midjourney currently has the best generative art.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <Badge variant="outline">SvelteKit</Badge>
-                  <Badge variant="outline">TailwindCSS</Badge>
-                  <Badge variant="outline">AWS API Gateway</Badge>
-                </div>
-                <Button asChild className="w-full glitch-hover">
-                  <Link href="https://prejourney.com" target="_blank">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    View Project
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
+            <ProjectCard
+              title="PreJourney"
+              description="SaaS offering Midjourney through an API"
+              imageSrc="/midjourney-api-dashboard-interface.jpg"
+              imageAlt="PreJourney Dashboard"
+              content="Built this for my AI lootbox merch store. Needed a way to programmatically create images for the lootboxes and as of now Midjourney currently has the best generative art."
+              technologies={["SvelteKit", "TailwindCSS", "AWS API Gateway"]}
+              projectUrl="https://prejourney.com"
+              badgeText="SaaS"
+            />
 
-            <Card className="hover:shadow-lg transition-all hover:scale-105 glitch-hover scan-lines">
-              <CardHeader>
-                <div className="flex justify-between items-start">
-                  <CardTitle className="text-xl">
-                    <GlitchText text="AI Blogs" />
-                  </CardTitle>
-                  <Badge className="neon-glow">AI Tool</Badge>
-                </div>
-                <CardDescription>
-                  ChatGPT 3.5 blogs created through keywords
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <img
-                  src="/ai-blog-generation-interface.jpg"
-                  alt="AI Blogs Interface"
-                  className="w-full h-48 object-cover rounded-lg mb-4 ascii-border"
-                />
-                <p className="text-muted-foreground mb-4">
-                  Using OpenAI's GPT 3.5 API, I created a system that given a
-                  keyword it will grab all the related keyword ideas from Google
-                  Keyword Planner and then use those keywords to create blog
-                  posts.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <Badge variant="outline">OpenAI API</Badge>
-                  <Badge variant="outline">Google Keyword Planner</Badge>
-                  <Badge variant="outline">Python</Badge>
-                </div>
-                <Button asChild className="w-full glitch-hover">
-                  <Link href="https://brionfog.com" target="_blank">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    View Project
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
+            <ProjectCard
+              title="AI Blogs"
+              description="ChatGPT 3.5 blogs created through keywords"
+              imageSrc="/ai-blog-generation-interface.jpg"
+              imageAlt="AI Blogs Interface"
+              content="Using OpenAI's GPT 3.5 API, I created a system that given a keyword it will grab all the related keyword ideas from Google Keyword Planner and then use those keywords to create blog posts."
+              technologies={["OpenAI API", "Google Keyword Planner", "Python"]}
+              projectUrl="https://brionfog.com"
+              badgeText="AI Tool"
+            />
           </div>
 
           {/* ASCII Art Divider */}
@@ -291,66 +240,37 @@ export default function Portfolio() {
           <h2 className="text-3xl font-bold text-foreground mb-12 text-center">
             <GlitchText text="Latest Blog Posts" />
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="hover:shadow-lg transition-all glitch-hover scan-lines">
-              <CardHeader>
-                <CardTitle className="text-lg">
-                  <Link
-                    href="/blog/getting-started-with-ai"
-                    className="hover:text-primary transition-colors"
-                  >
-                    <GlitchText text="Getting Started with AI Development" />
-                  </Link>
-                </CardTitle>
-                <CardDescription>March 15, 2024</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  A comprehensive guide to building your first AI application
-                  using modern tools and frameworks.
-                </p>
-              </CardContent>
-            </Card>
+          <div className="flex flex-col items-center justify-center py-16">
+            <div className="text-center mb-8">
+              <div className="text-4xl font-bold text-primary mb-4 font-mono terminal-cursor">
+                <GlitchText text="COMING SOON" />
+              </div>
+              <p className="text-muted-foreground text-lg">
+                New blog posts are being crafted in the digital realm...
+              </p>
+            </div>
 
-            <Card className="hover:shadow-lg transition-all glitch-hover scan-lines">
-              <CardHeader>
-                <CardTitle className="text-lg">
-                  <Link
-                    href="/blog/full-stack-best-practices"
-                    className="hover:text-primary transition-colors"
-                  >
-                    <GlitchText text="Full Stack Development Best Practices" />
-                  </Link>
-                </CardTitle>
-                <CardDescription>March 10, 2024</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Essential patterns and practices for building scalable
-                  full-stack applications in 2024.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-all glitch-hover scan-lines">
-              <CardHeader>
-                <CardTitle className="text-lg">
-                  <Link
-                    href="/blog/computer-vision-projects"
-                    className="hover:text-primary transition-colors"
-                  >
-                    <GlitchText text="Computer Vision Projects That Matter" />
-                  </Link>
-                </CardTitle>
-                <CardDescription>March 5, 2024</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Exploring real-world applications of computer vision and how
-                  to get started with your own projects.
-                </p>
-              </CardContent>
-            </Card>
+            {/* Future blog cards - uncomment when ready */}
+            {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+              <BlogCard
+                title="Getting Started with AI Development"
+                slug="getting-started-with-ai"
+                date="March 15, 2024"
+                description="A comprehensive guide to building your first AI application using modern tools and frameworks."
+              />
+              <BlogCard
+                title="Full Stack Development Best Practices"
+                slug="full-stack-best-practices"
+                date="March 10, 2024"
+                description="Essential patterns and practices for building scalable full-stack applications in 2024."
+              />
+              <BlogCard
+                title="Computer Vision Projects That Matter"
+                slug="computer-vision-projects"
+                date="March 5, 2024"
+                description="Exploring real-world applications of computer vision and how to get started with your own projects."
+              />
+            </div> */}
           </div>
         </div>
       </section>
@@ -391,7 +311,7 @@ export default function Portfolio() {
           <div className="mt-8 pt-8 border-t border-border">
             <AsciiArt art={asciiArts.rocket} className="text-xs mb-4" />
             <div className="text-sm text-muted-foreground font-mono terminal-cursor">
-              {'ASCII_ART := "Made with ♥ and lots of ☕"'}
+              {"Made with ♥ and lots of ☕"}
             </div>
           </div>
         </div>
