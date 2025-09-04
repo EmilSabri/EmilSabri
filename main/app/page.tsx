@@ -133,11 +133,12 @@ export default function Portfolio() {
                 experiences.
               </p>
               <p className="mb-6">
-                Working on a SaaS to bring an API to Midjourney. Currently
-                looking for a full time role that will prove to be a great
-                workspace for new learnings and challenges.
+                Working on Foodie Friend, a barcode scanning app that will
+                notify users of potential red flag ingredients such as artifical
+                dyes, flavors, seed oils etc with the ability for users to
+                create their own red flags for ingredients that personally
+                affect them.
               </p>
-              <p>And to not go broke lol</p>
             </div>
             <div className="flex justify-center">
               <AsciiArt art={asciiArts.terminal} className="text-xs" />
