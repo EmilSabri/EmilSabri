@@ -221,10 +221,17 @@ export default function Portfolio() {
 
             <ProjectCard
               title="Golang Websocket server"
-              description="Built a custom websocket implementation in Golang from reading The Web Socket Protocol RFC-6455"
+              description="Custom websocket server"
               content="Built a custom websocket implementation in Golang from reading The Web Socket Protocol RFC-6455."
               technologies={["Golang"]}
               badgeText="Websockets"
+            />
+            <ProjectCard
+              title="Live PR Deployments"
+              description="Vercel-like live feature links"
+              content="Sped up deployments for my team by creating a live url for every PR to main that would be just the changes in the PR replicating what vercel does but for free."
+              technologies={["Nginx", "Docker", "Github Actions", "Bash"]}
+              badgeText="CICD"
             />
           </div>
 
