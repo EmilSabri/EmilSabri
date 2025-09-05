@@ -202,23 +202,29 @@ export default function Portfolio() {
             <ProjectCard
               title="PreJourney"
               description="SaaS offering Midjourney through an API"
-              imageSrc="/midjourney-api-dashboard-interface.jpg"
+              imageSrc="/pj-screenshot.png"
               imageAlt="PreJourney Dashboard"
               content="Built this for my AI lootbox merch store. Needed a way to programmatically create images for the lootboxes and as of now Midjourney currently has the best generative art."
               technologies={["SvelteKit", "TailwindCSS", "AWS API Gateway"]}
-              // projectUrl="https://prejourney.com"
               badgeText="SaaS"
             />
 
             <ProjectCard
               title="AI Blogs"
               description="ChatGPT 3.5 blogs created through keywords"
-              imageSrc="/ai-blog-generation-interface.jpg"
+              imageSrc="/brianfog-screenshot.png"
               imageAlt="AI Blogs Interface"
               content="Using OpenAI's GPT 3.5 API, I created a system that given a keyword it will grab all the related keyword ideas from Google Keyword Planner and then use those keywords to create blog posts."
               technologies={["OpenAI API", "Google Keyword Planner", "Python"]}
-              // projectUrl="https://brionfog.com"
               badgeText="AI Tool"
+            />
+
+            <ProjectCard
+              title="Golang Websocket server"
+              description="Built a custom websocket implementation in Golang from reading The Web Socket Protocol RFC-6455"
+              content="Built a custom websocket implementation in Golang from reading The Web Socket Protocol RFC-6455."
+              technologies={["Golang"]}
+              badgeText="Websockets"
             />
           </div>
 

@@ -8,8 +8,8 @@ import Link from "next/link"
 interface ProjectCardProps {
   title: string;
   description: string;
-  imageSrc: string;
-  imageAlt: string;
+  imageSrc?: string;
+  imageAlt?: string;
   content: string;
   technologies: string[];
   projectUrl?: string;
@@ -26,7 +26,7 @@ export function ProjectCard({
   technologies,
   projectUrl,
   badgeText,
-  badgeVariant = "default"
+  badgeVariant = "default",
 }: ProjectCardProps) {
   return (
     <Card className="hover:shadow-lg transition-all hover:scale-105 glitch-hover scan-lines">
@@ -42,11 +42,13 @@ export function ProjectCard({
         <CardDescription>{description}</CardDescription>
       </CardHeader>
       <CardContent>
-        <img
-          src={imageSrc}
-          alt={imageAlt}
-          className="w-full h-48 object-cover rounded-lg mb-4 ascii-border"
-        />
+        {imageSrc && (
+          <img
+            src={imageSrc}
+            alt={imageAlt || title}
+            className="w-full h-48 object-cover rounded-lg mb-4 ascii-border"
+          />
+        )}
         <p className="text-muted-foreground mb-4">{content}</p>
         <div className="flex flex-wrap gap-2 mb-4">
           {technologies.map((tech, index) => (
