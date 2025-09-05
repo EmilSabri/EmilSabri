@@ -6,15 +6,15 @@ import { GlitchText } from "@/components/glitch-text"
 import Link from "next/link"
 
 interface ProjectCardProps {
-  title: string
-  description: string
-  imageSrc: string
-  imageAlt: string
-  content: string
-  technologies: string[]
-  projectUrl: string
-  badgeText: string
-  badgeVariant?: "default" | "secondary" | "destructive" | "outline"
+  title: string;
+  description: string;
+  imageSrc: string;
+  imageAlt: string;
+  content: string;
+  technologies: string[];
+  projectUrl?: string;
+  badgeText: string;
+  badgeVariant?: "default" | "secondary" | "destructive" | "outline";
 }
 
 export function ProjectCard({
